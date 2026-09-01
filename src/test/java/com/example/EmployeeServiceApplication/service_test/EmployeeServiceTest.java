@@ -31,12 +31,14 @@ public class EmployeeServiceTest {
         requestDto.setName("Sainath");
         requestDto.setAddress("Pune");
         requestDto.setPosition("Developer");
+        requestDto.setDepartmentCode("Dev");
 
         Employee savedEmployee = Employee.builder()
                 .id(1L)
                 .name("Sainath")
                 .address("Pune")
                 .position("Developer")
+                .departmentCode("Dev")
                 .build();
 
         when(employeeRepository.save(any(Employee.class))).thenReturn(savedEmployee);

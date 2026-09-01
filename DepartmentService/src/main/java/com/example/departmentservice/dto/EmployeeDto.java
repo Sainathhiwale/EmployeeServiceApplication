@@ -1,11 +1,10 @@
-package com.example.EmployeeServiceApplication.dto;
-
+package com.example.departmentservice.dto;
+// Employee Service DTO get her using  common-dto dependency
 public class EmployeeDto {
     private Long id;
     private String name;
     private String address;
     private String position;
-    private String departmentCode;
 
     public EmployeeDto() {
     }
@@ -15,14 +14,6 @@ public class EmployeeDto {
         this.name = name;
         this.address = address;
         this.position = position;
-    }
-
-    public EmployeeDto(Long id, String name, String address, String position, String departmentCode) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-        this.position = position;
-        this.departmentCode = departmentCode;
     }
 
     public String getAddress() {
@@ -59,13 +50,5 @@ public class EmployeeDto {
 
     public void setPosition(String position) {
         this.position = position;
-    }
-
-    public String getDepartmentCode() {
-        return departmentCode;
-    }
-
-    public void setDepartmentCode(String departmentCode) {
-        this.departmentCode = departmentCode;
     }
 }

@@ -37,7 +37,7 @@ public class EmployeeControllerTest {
         requestDto.setAddress("Pune");
         requestDto.setPosition("Developer");
 
-        Employee responseDto = new Employee(1L, "Sainath", "Pune", "Developer");
+        Employee responseDto = new Employee(1L, "Sainath", "Pune", "Developer","Dev");
 
         when(employeeService.saveEmployee(any(EmployeeDto.class))).thenReturn(responseDto);
 

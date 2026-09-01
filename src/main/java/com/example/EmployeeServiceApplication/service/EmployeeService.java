@@ -19,6 +19,7 @@ public class EmployeeService {
                 .name(employeeDto.getName())
                 .address(employeeDto.getAddress())
                 .position(employeeDto.getPosition())
+                .departmentCode(employeeDto.getDepartmentCode())
                 .build();
         return employeeRepository.save(employee);
     }

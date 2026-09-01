@@ -23,16 +23,24 @@ public class EmployeeRepositoryTest {
                 .name("Sainath")
                 .address("Pune")
                 .position("Developer")
+                .departmentCode("Dev")
                 .build();
 
         Employee emp2 = Employee.builder()
                 .name("Alex")
                 .address("Mumbai")
                 .position("Manager")
+                .departmentCode("MGR")
+                .build();
+        Employee emp3 = Employee.builder()
+                .name("Alex")
+                .address("Mumbai")
+                .position("QA")
                 .build();
 
         employeeRepository.save(emp1);
         employeeRepository.save(emp2);
+        employeeRepository.save(emp3);
 
         // Act
         List<Employee> developers = employeeRepository.findByPosition("Developer");

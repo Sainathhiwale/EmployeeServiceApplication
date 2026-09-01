@@ -20,6 +20,7 @@ public class Employee {
     private String name;
     private String address;
     private String position;
+    private String departmentCode;
 
     public Employee(String name, String address, String position) {
         this.name = name;
